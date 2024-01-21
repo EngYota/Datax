@@ -5057,7 +5057,7 @@ ol.wp-block-rss {
 .footer-widget.widget_archive a,
 .footer-widget.widget_categories a,
 .footer-widget.widget_nav_menu a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 0 0 0 15px;
     margin-bottom: 20px;
@@ -18905,9 +18905,39 @@ span.select2-selection.select2-selection--single:focus {
 [dir="rtl"] .th-btn i,
 [dir="rtl"] .link-btn i {
     -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    padding-left: 10px;
 }
-
+[dir="rtl"] .why-choose .title-area,
+[dir="rtl"] .why-choose p,
+[dir="rtl"] .teach-people .title-area,
+[dir="rtl"] .teach-people p{
+    text-align: right !important;
+}
+[dir="rtl"] .teach-people .title-area i,
+[dir="rtl"] .testi-sec .title-area i,
+[dir="rtl"] .what-do .title-area i,
+[dir="rtl"] .about-section .title-area i,
+.course-tab .nav-link i{
+        padding-left: 10px;
+}
+[dir="rtl"] .pagination li:last-child i{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+[dir="rtl"] .course-meta.style2 a:not(:last-child), 
+.course-meta.style2 span:not(:last-child){
+    margin-left: 30px;
+    margin-right: 0;
+}
+[dir="rtl"] .course-single-meta li:not(:last-child){
+    margin-left: 30px;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 0;
+    border-left: 1px solid #D0DBE9;
+    border-right: none;
+}
 [dir="rtl"] select,
 [dir="rtl"] .form-control,
 [dir="rtl"] .form-select,
@@ -18915,7 +18945,28 @@ span.select2-selection.select2-selection--single:focus {
 [dir="rtl"] input {
     direction: ltr
 }
-
+[dir="rtl"] .Login-section .form-control,
+[dir="rtl"] .contact-section .form-control{
+    direction: rtl;
+}
+[dir="rtl"] .form-group>i{
+    padding-top: 1px;
+    left: 25px;
+    right: auto;
+}
+[dir="rtl"] .my-account .dashboard-list{
+    padding-right: 0;
+}
+[dir="rtl"] .my-account .account-dashboard .user-name i{
+    padding-left: 8px;
+}
+[dir="rtl"] .border-title:before{
+    right: 0;
+    left: auto;
+}
+[dir="rtl"] .why-choose .th-btn{
+    float: right;
+}
 [dir="rtl"] .checklist ul {
     padding: 0;
     text-align: right
@@ -18974,7 +19025,7 @@ span.select2-selection.select2-selection--single:focus {
 
 [dir="rtl"] .header-links li>i {
     margin-left: 10px;
-    margin-right: 0
+    margin-right: 0px;
 }
 
 [dir="rtl"] .header-layout1 .header-top .header-links.header-right li:first-child {
@@ -19101,12 +19152,19 @@ span.select2-selection.select2-selection--single:focus {
 [dir="rtl"] .footer-widget.widget_categories a:before,
 [dir="rtl"] .footer-widget.widget_nav_menu a:before {
     left: auto;
-    right: 0;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%)
+    right: -3px;
+    -webkit-transform:  rotate(180deg);
+    -ms-transform:  rotate(180deg);
+    transform: rotate(180deg);
 }
-
+[dir="rtl"] .footer-widget .form-group>i {
+    top: 18px;
+    left: 25px;
+    right: auto;
+}
+[dir="rtl"] .newsletter-form input{
+    text-align: right;
+}
 
 [dir="rtl"] .hero-1 .shape1 {
     left: 0;
